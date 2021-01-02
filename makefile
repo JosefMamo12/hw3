@@ -21,5 +21,8 @@ main2.o: main2.c
 
 txt_functions.o: txt_functions.h txt_functions.c
 	$(CC) $(FLAGS) -c txt_functions.c
+
+ .PHONY: clean all
 clean:
-	-rm *o isort txtfind
+	rm -rf *o isort txtfind hw3
+	
